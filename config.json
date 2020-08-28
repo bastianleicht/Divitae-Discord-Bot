@@ -1,25 +1,25 @@
 {
     "owner": ["350618993020764161"],
-    "version": "v1.5",
-    "prefix": "$",
+    "prefix": "%",
+    "version": "v1.4",
     "application": {
-        "bewerbungschannel": "703217993597059073",
-        "applychannel": "742337048735645777",
-        "bewerberrole": "704037554109808671",
+        "bewerbungschannel": "696353117910073486",
+        "applychannel": "739362427434565733",
+        "bewerberrole": "736614546118279188",
         "questions": [
-            "» Name (reallife)? ",
-            "» Name (Fornite & Valorant)? ",
-            "» Alter? ",
-            "» Earnings? ",
-            "» Wins (Fornite)? ",
-            "» Wins (Valorant)? ",
-            "» K/D? (Fortnite)? ",
-            "» K/D? (Valorant)? ",
-            "» Stärken & Schwächen(Fortnite)? ",
-            "» Stärken & Schwächen(Valorant)? ",
-            "» Plattform? ",
-            "» Controller oder M&K? ",
-            "» Würdest du deinen Namen Ingame und auf Discord Ändern? (DVT DeinName)"
+            "Â» Name (reallife)? ",
+            "Â» Name (Fornite & Valorant)? ",
+            "Â» Alter? ",
+            "Â» Earnings? ",
+            "Â» Wins (Fornite)? ",
+            "Â» Wins (Valorant)? ",
+            "Â» K/D? (Fortnite)? ",
+            "Â» K/D? (Valorant)? ",
+            "Â» StÃ¤rken & SchwÃ¤chen(Fortnite)? ",
+            "Â» StÃ¤rken & SchwÃ¤chen(Valorant)? ",
+            "Â» Plattform? ",
+            "Â» Controller oder M&K? ",
+            "Â» WÃ¼rdest du deinen Namen Ingame und auf Discord Ã„ndern? (DVT DeinName)"
         ]
     }
 }
