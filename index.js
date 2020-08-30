@@ -20,7 +20,9 @@ fs.readdir('./events/', (err, files) => {
      let evtName = file.split('.')[0];
      console.log(`Loaded event '${evtName}'`);
      client.on(evtName, evt.bind(null, client));
+    
     });
+    console.log('------------------------------------------------');
 });
 
 fs.readdir('./commands/', async (err, files) => {
@@ -28,19 +30,47 @@ fs.readdir('./commands/', async (err, files) => {
         if (!file.endsWith('.js')) return;
         let props = require(`./commands/${file}`);
         let cmdName = file.split('.')[0];
-        console.log(`Loaded Command '${cmdName}'`);
+        console.log(`Loaded Test Command's '${cmdName}'`);
         client.commands.set(cmdName, props);
 
     });
+    console.log('------------------------------------------------');
 });
 
-//client.on('message', (message) => {
-//    if (message.author.bot) return;
-//    if (message.content.includes('discord.gg/' || 'discordapp.com/invite/') == message.member.hasPermission('ADMINISTRATOR')) {
-//    } else {
-//        message.delete().then(message.channel.send(':no_entry: You are not Permitted to send Invite Links!'));
-//    }
-//});
+fs.readdir('./commands/owner/', async (err, files) => {
+    files.forEach(file => {
+        if (!file.endsWith('.js')) return;
+        let props = require(`./commands/owner/${file}`);
+        let cmdName = file.split('.')[0];
+        console.log(`Loaded Owner Command '${cmdName}'`);
+        client.commands.set(cmdName, props);
 
+    });
+    console.log('------------------------------------------------');
+});
+
+fs.readdir('./commands/team/', async (err, files) => {
+    files.forEach(file => {
+        if (!file.endsWith('.js')) return;
+        let props = require(`./commands/team/${file}`);
+        let cmdName = file.split('.')[0];
+        console.log(`Loaded Team Command '${cmdName}'`);
+        client.commands.set(cmdName, props);
+
+    });
+    console.log('------------------------------------------------');
+});
+
+fs.readdir('./commands/public/', async (err, files) => {
+    files.forEach(file => {
+        if (!file.endsWith('.js')) return;
+        let props = require(`./commands/public/${file}`);
+        let cmdName = file.split('.')[0];
+        console.log(`Loaded Public Command '${cmdName}'`);
+        client.commands.set(cmdName, props);
+
+    });
+    console.log('------------------------------------------------');
+});
 
 client.login(config.token || process.env.TOKEN);
