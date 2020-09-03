@@ -27,7 +27,7 @@ exports.run = async (client, message, args) => {
         .setTitle('📜 | Roster')
         .setDescription('')
         .addField(`__Founder__`, '<@316261977645383690>\nAufgabenbereich: Clan / Orga Marketing & Finanzierung')
-        .addField(`__Worker`, `<@350618993020764161>\nAufgabenbereich: Spezialaufträge\n<@421978851615178753>\nAufgabenbereich: Spezialaufträge`)
+        .addField(`__Worker__`, `<@350618993020764161>\nAufgabenbereich: Spezialaufträge\n<@421978851615178753>\nAufgabenbereich: Spezialaufträge`)
         .addField(`__Admin__`, '<@303483003252768769>\nAufgabenbereich: Tryout Leitung (Fortnite)\n<@371377075631816724>\nAufgabenbereich: ~\n<@673340511334957087>\nAufgabenbereich: none')
         .addField(`__Manager__`, '<@307851291940487168>\nAufgabenbereich: Valorant Kordination & Management / stellv. Teamleitung \n<@512150431384862720>\nAufgabenbereich: Fortnite Kordination & Management / stellv. Teamleitung\n<@307851291940487168>\nAufgabenbereich: ~')
         .addField(`__Developer__`, 'Interesse? DM <@350618993020764161>')
