@@ -8,6 +8,9 @@ const Discord = require('discord.js');
 const config = require('../../config.json');
 
 exports.run = async (client, message, args) => {
+
+    if (message.author.bot) return;
+    
     let user;
 
     if (message.mentions.users.first()) {

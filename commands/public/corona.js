@@ -12,6 +12,8 @@ module.exports.run = async (client, message, args) => {
 
     let url, response, corona;
 
+    if (message.author.bot) return;
+
     try {
         url = args[0] ? `${baseUrl}/countries/${args[0]}`:`${baseUrl}/all`;
         response = await axios.get(url);

@@ -19,7 +19,10 @@ module.exports.run = async (client, message, args) => {
         **${config.prefix}ping** - Shows you the current Ping of the Bot.\n\
         **${config.prefix}avatar @user** - Shows you the Avatar of the specified user and a Link to it.\n\
         **${config.prefix}corona <Country>** - Shows You the actual Corona Statistics.\n\
-        **${config.prefix}meme** - Sends a random Meme.`)
+        **${config.prefix}meme** - Sends a random Meme.\n\
+        **${config.prefix}serverinfo** - Shows you the Server's Information.\n\
+        **${config.prefix}hug @user** - Allows you to hug another User.\n\
+        **${config.prefix}userinfo @user** - Shows advanced infos off that User.`)
         .addField('__Team Commands__:', `**${config.prefix}partner <Discord Link> @user <Team Name>** - Sends a Partner Message in the current Channel.\n\
         **${config.prefix}clear <number>** - Cleares the specified number of messages.`)
         .setTimestamp()
