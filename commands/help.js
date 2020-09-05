@@ -17,7 +17,9 @@ module.exports.run = async (client, message, args) => {
         .setTitle('Divitae Help')
         .addField('__Public Commands__:', `**${config.prefix}info** - Shows you some Info about the Bot.\n\
         **${config.prefix}ping** - Shows you the current Ping of the Bot.\n\
-        **${config.prefix}avatar @user** - Shows you the Avatar of the specified user and a Link to it.`)
+        **${config.prefix}avatar @user** - Shows you the Avatar of the specified user and a Link to it.\n\
+        **${config.prefix}corona <Country>** - Shows You the actual Corona Statistics.\n\
+        **${config.prefix}meme** - Sends a random Meme.`)
         .addField('__Team Commands__:', `**${config.prefix}partner <Discord Link> @user <Team Name>** - Sends a Partner Message in the current Channel.\n\
         **${config.prefix}clear <number>** - Cleares the specified number of messages.`)
         .setTimestamp()

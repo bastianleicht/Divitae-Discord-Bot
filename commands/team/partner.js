@@ -23,7 +23,7 @@ exports.run = async (client, message, args) => {
         return message.member.send(embed);
     }
 
-    if (args[0].includes("https://discord.gg/") && message.member.hasPermission('ADMINISTRATOR')) {
+    if (args[0].includes("https://discord.gg/") && message.member.hasPermission('MANAGE_MESSAGES')) {
         const embed = new Discord.MessageEmbed()
         .setTitle(':gem: | Neue Partnerschaft')
         .setDescription(`▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n**Name:** ${args[2]}\n**Kontakt:** ${args[1]}\n**Discord:** ${args[0]}\n▬▬▬▬▬▬▬▬▬▬▬▬▬▬`)
