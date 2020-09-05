@@ -39,7 +39,7 @@ exports.run = async (client, message, args) => {
     
         message.channel.send(embed).then(n => n.react('✋')).catch(console.error);
     } else {
-        return message.channel.send('⛔ You are not the Bot owner!');
+        return;
     }
 
 };

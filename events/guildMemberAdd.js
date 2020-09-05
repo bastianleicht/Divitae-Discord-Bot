@@ -6,8 +6,25 @@
 const Discord = require("discord.js");
 const config = require("../config.json");
 
-module.exports = (client, message, user, guild, member) => {
-    
+module.exports = async (member) => {
+
+    if (member.user.bot) return;
+    // console.log(member);
+
+
+
+    // const dm = new Discord.MessageEmbed()
+    // .setColor(0x7289DA)
+    // .setTitle(`Welcome to ${member.guild.name}!`)
+    // .setDescription("Hello! Before you get started, I just want you to verify yourself first.")
+    // .addField("Put your code into the channel.", `**This is your code:** ${'number'}`);
+    // await member.send(dm);
+
+
+    // const message = `Welcome <@${member.id}> to the Server!`;
+    // const channel = client.guild.channels.cache.find(ch => ch.id === config.welcome.channel);
+    // channel.send(message);
+
     // const embed = new Discord.MessageEmbed()
     //     .setAuthor('Divitae eSports', 'https://s12.directupload.net/images/200811/q73x4vjg.png')
     //     .setDescription(`Willkommen ${guild.member.username} 🎉\n`)
@@ -19,5 +36,4 @@ module.exports = (client, message, user, guild, member) => {
     //     .setFooter(`© 2020 Divitae`);
 
     //     member.send(embed);
-    
 };

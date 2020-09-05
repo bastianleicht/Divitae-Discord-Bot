@@ -11,7 +11,7 @@ module.exports.run = async (client, message, args) => {
 
     let embed = new Discord.MessageEmbed()
         .setTitle("🏓 Pong!")
-        .setColor(0x8e44ad)
+        .setColor(3447003)
         .addField("Bot Latency", `${message.createdTimestamp - message.createdTimestamp}ms`, true)
         .addField("API Latency", `${Math.round(client.ws.ping)}ms`, true)
         .setTimestamp()

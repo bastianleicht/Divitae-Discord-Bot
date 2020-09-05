@@ -1,7 +1,11 @@
 {
+    "token": "NzQ5NTQyNjcwODg3NTUwOTc3.X0tgAg.YXsST73S6LUOdJue0CNXOmTJ1tw",
     "owner": ["350618993020764161"],
-    "prefix": "d!",
-    "version": "v1.5",
+    "prefix": "d1",
+    "version": "Dev",
+    "welcome": {
+        "channel": "751847967065112668"
+    },
     "application": {
         "applychannel": "739362427434565733",
         "bewerbungschannel": "696353117910073486",

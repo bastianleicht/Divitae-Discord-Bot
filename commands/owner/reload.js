@@ -7,7 +7,7 @@ const Discord = require('discord.js');
 
 exports.run = async (client, message, args) => {
 
-    if(message.author.id != "350618993020764161") return message.channel.send(":no_entry: You are not the Bot owner!");
+    if(message.author.id != "350618993020764161") return;
 
     if(!args[0]) return message.channel.send("Please provide a command to reload!");
     let commandName = args[0].toLowerCase();

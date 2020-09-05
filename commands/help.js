@@ -1,0 +1,31 @@
+/*
+ *   Copyright (c) 2020 routerabfrage
+ *   All rights reserved.
+ */
+// jshint esversion: 8
+// jshint multistr: true 
+const Discord = require('discord.js');
+const config = require('../config.json');
+
+module.exports.run = async (client, message, args) => {
+    if (message.author.bot) return;
+    let prefix = config.prefix;
+    if (!message.content.startsWith(prefix)) return;
+
+    const embed = new Discord.MessageEmbed()
+        .setColor(3447003)
+        .setTitle('Divitae Help')
+        .addField('__Public Commands__:', `**${config.prefix}info** - Shows you some Info about the Bot.\n\
+        **${config.prefix}ping** - Shows you the current Ping of the Bot.\n\
+        **${config.prefix}avatar @user** - Shows you the Avatar of the specified user and a Link to it.`)
+        .addField('__Team Commands__:', `**${config.prefix}partner <Discord Link> @user <Team Name>** - Sends a Partner Message in the current Channel.\n\
+        **${config.prefix}clear <number>** - Cleares the specified number of messages.`)
+        .setTimestamp()
+        .setFooter(`© 2020 Divitae`);
+
+    message.author.send(embed);
+};
+
+module.exports.help = {
+    name: "help"
+};

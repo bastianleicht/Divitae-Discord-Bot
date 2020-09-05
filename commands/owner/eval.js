@@ -1,16 +1,17 @@
+/*
+ *   Copyright (c) 2020 routerabfrage
+ *   All rights reserved.
+ */
 // jshint esversion: 8
 const Discord = require("discord.js");
 const beautify = require("beautify");
 
 module.exports = {
     name: "eval",
-    aliases: ["e"],
-    usage: "<code to eval>",
 
     run: async (client, message, args) => {
         if(message.author.id !== "350618993020764161") {
-            return message.channel.send("⛔ You are not the Owner of the bot!")
-                .then(m => m.delete(5000));
+            return;
         }
 
         if(!args[0]){

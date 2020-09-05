@@ -8,14 +8,12 @@ const config = require('../../config.json');
 
 exports.run = async (client, message, args) => {
 
-
-
     await message.delete().catch(O_o => {});
     if (message.author.bot) return;
     if (message.channel == 'dm') return;
 
     if (args[0] === null || args[0] === "") return;
-    if (args[0].includes("https://discord.gg/") === false) {
+    if (args[0].includes("https://discord.gg/") === false && message.author.hasPermission('MANAGE_MESSAGES')) {
         const embed = new Discord.MessageEmbed()
         .setTitle(':warning: | Error')
         .addField('**Invalid Command Syntax!** Please use:', `${config.prefix}partner <Invite Link> <Kontakt> <Name>`)
@@ -36,7 +34,15 @@ exports.run = async (client, message, args) => {
         message.channel.send(embed);
     
     } else {
-        return message.channel.send('⛔ You have no permission to use that Command!');
+        const embed = new Discord.MessageEmbed()
+            .setTitle('Missing Permission')
+            .setDescription(`I'm sorry but you don't have the **MANAGE_MESSAGES** Permission`)
+            .setColor('#FF0000')
+            .setTimestamp()
+            .setFooter(`© 2020 Divitae`);
+        message.channel.send(embed).then(msg => {
+            msg.delete({ timeout: 10000 });         // Deletes Message after 10seconds
+        }).catch(console.error); 
     }
 
 };

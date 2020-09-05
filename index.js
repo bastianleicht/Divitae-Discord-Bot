@@ -73,4 +73,9 @@ fs.readdir('./commands/public/', async (err, files) => {
     console.log('------------------------------------------------');
 });
 
+process.on('unhandledRejection', error => {
+    console.error('Unhandled promise rejection:', error);
+});
+
+
 client.login(config.token || process.env.TOKEN);
