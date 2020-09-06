@@ -4,7 +4,7 @@
  */
 // jshint esversion: 8
 const Discord = require("discord.js");
-const config = require("../config.json");
+const config = require("../opt/config.json");
 
 module.exports = async (client) => {
     console.log(`Member Count Updated to ` + client.guilds.cache.get(config.serverstats.serverID).memberCount);

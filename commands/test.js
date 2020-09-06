@@ -4,7 +4,7 @@
  */
 // jshint esversion: 8
 const Discord = require('discord.js');
-const config = require('../config.json');
+const config = require('../opt/config.json');
 
 exports.run = async (client, message, args) => {
 

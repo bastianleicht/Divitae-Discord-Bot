@@ -3,7 +3,7 @@
  *   All rights reserved.
  */
 // jshint esversion: 8
-const config = require("../config.json");
+const config = require("../opt/config.json");
 
 module.exports = (client) => {
     console.log(`Logged in as ${client.user.tag}!`);

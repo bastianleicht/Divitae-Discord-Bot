@@ -4,11 +4,26 @@
  */
 // jshint esversion: 8
 const Discord = require("discord.js");
-const fs = require('fs');
-const Enmap = require('enmap');
-const config = require('./config.json');
-
 const client = new Discord.Client();
+
+const fs = require('fs');
+
+const Enmap = require('enmap');
+
+const config = require('./opt/config.json');
+client.config = config;
+
+const { GiveawaysManager } = require('discord-giveaways');
+client.GiveawaysManager = new GiveawaysManager(client, {
+    storage: "./opt/giveaways.json",
+    updateCountdownEvery: 5000,
+    default: {
+        botsCanWin: false,
+        exemptPermissions: ["MANAGE_MESSAGES", "ADMINISTRATOR"],
+        embedColor: "#FF0000",
+        reaction: "🎉"
+    }
+});
 
 client.commands = new Enmap();
 

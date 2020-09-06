@@ -4,7 +4,7 @@
  */
 // jshint esversion: 8
 const Discord = require('discord.js');
-const { application, prefix } = require("../config.json");
+const { application, prefix } = require("../opt/config.json");
 
 module.exports = async (client, messageReaction, user) => {
 
@@ -16,7 +16,7 @@ module.exports = async (client, messageReaction, user) => {
     const bewerber = message.guild.roles.cache.get(application.bewerberrole); // bewerber role role
 
     if (member.user.bot) return;
-    if (message.channel.id !== applychannel.id) return;
+    if (message.channel.id != applychannel.id) return;
     if (messageReaction.emoji.name !== '📑') return;
     
     var d = new Date(),

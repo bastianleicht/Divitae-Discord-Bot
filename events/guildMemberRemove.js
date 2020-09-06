@@ -3,7 +3,7 @@
  *   All rights reserved.
  */
 // jshint esversion: 8
-const config = require('../config.json');
+const config = require('../opt/config.json');
 
 module.exports = (client, message, guild) => {
     console.log(`Member Count Updated to ` + client.guilds.cache.get(config.serverstats.serverID).memberCount);

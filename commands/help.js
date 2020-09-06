@@ -5,7 +5,7 @@
 // jshint esversion: 8
 // jshint multistr: true 
 const Discord = require('discord.js');
-const config = require('../config.json');
+const config = require('../opt/config.json');
 
 module.exports.run = async (client, message, args) => {
     if (message.author.bot) return;

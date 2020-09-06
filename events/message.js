@@ -3,7 +3,7 @@
  *   All rights reserved.
  */
 // jshint esversion: 8
-const { prefix } = require('../config.json');
+const { prefix } = require('../opt/config.json');
 
 module.exports = (client, message) => {
 

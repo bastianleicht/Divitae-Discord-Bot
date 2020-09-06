@@ -1,7 +1,8 @@
 {
+    "token": "NzQ5NTQyNjcwODg3NTUwOTc3.X0tgAg.YXsST73S6LUOdJue0CNXOmTJ1tw",
     "owner": ["350618993020764161"],
     "prefix": "d!",
-    "version": "1.7",
+    "version": "1.8",
     "welcome": {
         "channel": "751847967065112668"
     },
@@ -11,9 +12,13 @@
         "member": "",
         "bots": ""
     },
+    "giveaway": {
+        "everyoneMention": false,
+        "hostedBy": true
+    },
     "application": {
-        "applychannel": "739362427434565733",
-        "bewerbungschannel": "703217993597059073",
+        "applychannel": "696353117910073486",
+        "bewerbungschannel": "739362427434565733",
         "bewerberrole": "736614546118279188",
         "questions": [
             "» Name (reallife)? ",
