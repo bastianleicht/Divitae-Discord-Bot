@@ -1,9 +1,15 @@
 {
     "owner": ["350618993020764161"],
     "prefix": "d!",
-    "version": "1.6",
+    "version": "1.7",
     "welcome": {
         "channel": "751847967065112668"
+    },
+    "serverstats": {
+        "serverID": "692452622933950464",
+        "total": "717382593011777597",
+        "member": "",
+        "bots": ""
     },
     "application": {
         "applychannel": "739362427434565733",
