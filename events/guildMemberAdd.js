@@ -6,20 +6,15 @@
 const Discord = require("discord.js");
 const config = require("../config.json");
 
-module.exports = async (member) => {
+module.exports = async (client) => {
+    console.log(`Member Count Updated to ` + client.guilds.cache.get(config.serverstats.serverID).memberCount);
 
-    if (member.user.bot) return;
+    client.channels.cache.get(config.serverstats.total).setName(`All Members: ${client.guilds.cache.get(config.serverstats.serverID).memberCount}`);
+    // client.guild.channels.cache.get(config.serverstats.member).setName(`Members: ${client.guild.members.cache.filter(m => !m.user.bot).size}`);
+    // client.guild.channels.cache.get(config.serverstats.bots).setName(`Bots: ${client.guild.members.cache.filter(m => m.user.bot).size}`);
+
+
     // console.log(member);
-
-
-
-    // const dm = new Discord.MessageEmbed()
-    // .setColor(0x7289DA)
-    // .setTitle(`Welcome to ${member.guild.name}!`)
-    // .setDescription("Hello! Before you get started, I just want you to verify yourself first.")
-    // .addField("Put your code into the channel.", `**This is your code:** ${'number'}`);
-    // await member.send(dm);
-
 
     // const message = `Welcome <@${member.id}> to the Server!`;
     // const channel = client.guild.channels.cache.find(ch => ch.id === config.welcome.channel);

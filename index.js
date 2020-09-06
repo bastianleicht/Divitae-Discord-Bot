@@ -12,6 +12,8 @@ const client = new Discord.Client();
 
 client.commands = new Enmap();
 
+console.log('------------------------------------------------');
+
 fs.readdir('./events/', (err, files) => {
     if (err) return console.error;
     files.forEach(file => {
