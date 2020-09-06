@@ -5,6 +5,12 @@
     "welcome": {
         "channel": "751847967065112668"
     },
+    "serverstats": {
+        "serverID": "692452622933950464",
+        "total": "717382593011777597",
+        "member": "",
+        "bots": ""
+    },
     "application": {
         "applychannel": "739362427434565733",
         "bewerbungschannel": "703217993597059073",
