@@ -22,9 +22,12 @@ module.exports.run = async (client, message, args) => {
         **${config.prefix}meme** - Sends a random Meme.\n\
         **${config.prefix}serverinfo** - Shows you the Server's Information.\n\
         **${config.prefix}hug @user** - Allows you to hug another User.\n\
-        **${config.prefix}userinfo @user** - Shows advanced infos off that User.`)
+        **${config.prefix}userinfo @user** - Shows advanced infos off that User.\n\
+        **${config.prefix}coinflip** - Flip the Coin!`)
         .addField('__Team Commands__:', `**${config.prefix}partner <Discord Link> @user <Team Name>** - Sends a Partner Message in the current Channel.\n\
-        **${config.prefix}clear <number>** - Cleares the specified number of messages.`)
+        **${config.prefix}clear <number>** - Cleares the specified number of messages.\n\
+        **${config.prefix}giveaway <Channel> <Duration> <Winners> <Name>** - Creates a Giveaway for You!\n\
+        **${config.prefix}reroll <Giveaway ID>** - Rerolls an ended Giveaway.`)
         .setTimestamp()
         .setFooter(`© 2020 Divitae`);
 
