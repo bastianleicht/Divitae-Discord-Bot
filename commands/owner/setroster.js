@@ -35,7 +35,8 @@ exports.run = async (client, message, args) => {
         <@371377075631816724>\nAufgabenbereich: Teamleitung (Fortnite)\n\
         <@673340511334957087>\nAufgabenbereich: n/A')
         .addField(`__Manager__`, '<@493848929981693963>\nAufgabenbereich: Event Unterstützung\n\
-        <@713124538908540970>\nAufgabenbereich: Fortnite Kordination & Management / stellv. Teamleitung')
+        <@713124538908540970>\nAufgabenbereich: Fortnite Kordination & Management / stellv. Teamleitung\n\
+        <@534381723207729153>\nAufgabenbereich: Fortnite Kordination & Management / stellv. Teamleitung')
         .addField(`__Developer__`, 'Interesse? DM <@350618993020764161>')
         .addField(`__Moderator__`, '<@678875686722863114>\nAufgabenbereich: Unterstützung Admins, Moderation mit Bann-,Kick- und Muterechten, Support\n\
         <@443804120638291969>\nAufgabenbereich: Unterstützung Admins, Moderation mit Bann-,Kick- und Muterechten, Support\n\
