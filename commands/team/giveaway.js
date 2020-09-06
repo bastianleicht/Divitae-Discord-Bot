@@ -33,7 +33,7 @@ module.exports.run = async (client, message, args) => {
 
         messages: {
             giveaway: (client.config.giveaway.everyoneMention ? "@everyone\n\n" : "") + "✅ **NEW GIVEAWAY STARTED** ✅",
-            giveawayEned: (client.config.giveaway.everyoneMention ? "@everyone\n\n" : "") + "⚠️ **GIVEAWAY ENDED** ⚠️",
+            giveawayEnded: (client.config.giveaway.everyoneMention ? "@everyone\n\n" : "") + "⚠️ **GIVEAWAY ENDED** ⚠️",
             timeRemaining: "Time remaining: **{duration}**",
             inviteToParticipate: "React with 🎉 to enter",
             winMessage: "Congrats {winners}, you won **{prize}**",
