@@ -1,6 +1,7 @@
 /*
  *   Copyright (c) 2020 routerabfrage
  *   All rights reserved.
+ *   https://github.com/routerabfrage/License
  */
 // jshint esversion: 8
 // jshint multistr: true

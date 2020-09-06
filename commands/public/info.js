@@ -1,6 +1,7 @@
 /*
  *   Copyright (c) 2020 routerabfrage
  *   All rights reserved.
+ *   https://github.com/routerabfrage/License
  */
 // 2020-04-17 Bot Creation Date
 // jshint esversion: 8
