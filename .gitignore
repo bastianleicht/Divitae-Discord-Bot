@@ -1,0 +1,10 @@
+node_modules
+opt
+.idea
+Apply-Bot.code-workspace
+ls.sh
+start.sh
+TODO
+.env
+*.json
+data/*
